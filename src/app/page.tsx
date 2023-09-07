@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "../components/Hero";
 import ThreeScene from "../components/animations/ThreeScene";
 
