@@ -6,7 +6,7 @@ import { MeshBasicMaterial } from "three";
 
 export default function ThreeScene() {
   // @ts-ignore
-  const obj = useLoader(OBJLoader, "/model.obj");
+  const obj = useLoader(OBJLoader, "./model.obj");
 
   // Create a wireframe material
   const wireframeMaterial = new MeshBasicMaterial({
