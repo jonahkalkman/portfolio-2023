@@ -5,6 +5,7 @@ import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
 import { MeshBasicMaterial } from "three";
 
 export default function ThreeScene() {
+  // @ts-ignore
   const obj = useLoader(OBJLoader, "/model.obj");
 
   // Create a wireframe material
@@ -32,6 +33,7 @@ export default function ThreeScene() {
   const animate = () => {
     if (objRef.current) {
       // Rotate the object
+      // @ts-ignore
       objRef.current.rotation.y += rotationSpeed;
     }
   };

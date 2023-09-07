@@ -8,7 +8,7 @@ export default function Header() {
         style={{
           transition: "all .7s cubic-bezier(.7, 0, .3, 1)",
         }}
-        className="flex items-center justify-between gap-4 border-solid border-2 border-gray-200 py-2 px-8 pl-4 rounded-full hover:bg-white hover:text-black"
+        className="flex items-center justify-between gap-4"
       >
         <Image
           className="w-[30px] h-[30px]"
@@ -17,7 +17,7 @@ export default function Header() {
           height={500}
           alt="Picture of Jonah Kalkman"
         />
-        <h1 className="text-lg uppercase leading-none">Jonah Kalkman</h1>
+        <h1 className="text-sm uppercase leading-none">Jonah Kalkman</h1>
       </div>
       <Navigation />
     </header>

@@ -20,7 +20,7 @@ export default function CurrentTime() {
     };
 
     // Format the current time according to the specified options
-    return new Intl.DateTimeFormat("en-US", options).format(now);
+    return new Intl.DateTimeFormat("en-US", options as any).format(now);
   };
 
   useEffect(() => {
