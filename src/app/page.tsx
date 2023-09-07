@@ -1,11 +1,11 @@
-import TextAnimation from "../components/animations/TextAnimation";
+import Hero from "../components/Hero";
+import ThreeScene from "../components/animations/ThreeScene";
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-4">
-      <h1 className="text-5xl leading-[125%]">
-        <TextAnimation text="Jonah Kalkman" />
-      </h1>
-    </main>
+    <div>
+      <Hero />
+      <ThreeScene />
+    </div>
   );
 }
