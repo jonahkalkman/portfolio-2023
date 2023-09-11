@@ -1,17 +1,15 @@
 "use client";
 
-import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 interface Props {
   text: string;
-  animateOnce: boolean;
+  hover: boolean;
 }
 
-export default function TextAnimation({ text, animateOnce }: Props) {
+export default function TextHoverAnimation({ text , hover}: Props) {
   const ref = useRef<HTMLSpanElement>(null);
   const words = text.split(" ");
-  const isInView = useInView(ref, { once: animateOnce });
 
   return (
     <>
@@ -25,7 +23,7 @@ export default function TextAnimation({ text, animateOnce }: Props) {
           <span
             className="span-line-inner relative inline whitespace-pre-wrap"
             style={{
-              transform: isInView ? "translateY(0px)" : "translateY(100%)",
+              transform: hover ? "translateY(0px)" : "translateY(100%)",
               transition: "all .7s cubic-bezier(.7, 0, .3, 1)",
             }}
           >

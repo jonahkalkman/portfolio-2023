@@ -12,7 +12,7 @@ export default function ThreeScene() {
     wireframe: true,
     color: "white",
     transparent: true,
-    opacity: 0.05,
+    opacity: 0.5,
   });
 
   // Apply the wireframe material to the loaded OBJ object
