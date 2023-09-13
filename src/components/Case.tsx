@@ -4,7 +4,6 @@ import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import TextHoverAnimation from "./animations/TextHoverAnimation";
 import Link from "next/link";
-import ImageParallax from "./animations/ImageParallax";
 import MouseTrail from "./animations/MouseTrail";
 
 interface Props {
