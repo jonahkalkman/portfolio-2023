@@ -20,7 +20,9 @@ export default function MouseTrail({ children }: Props) {
       el.addEventListener("mouseenter", (e) => {
         gsap.to(trail, {
           force3D: true,
+          // @ts-ignore
           x: e.offsetX - 100,
+          // @ts-ignore
           y: e.offsetY - 100,
         });
         gsap.to(trail, {
@@ -43,7 +45,9 @@ export default function MouseTrail({ children }: Props) {
       el.addEventListener("mousemove", (e) => {
         gsap.to(trail, {
           force3D: true,
+          // @ts-ignore
           x: e.offsetX - 75,
+          // @ts-ignore
           y: e.offsetY - 75,
           delay: 0.1,
         });
