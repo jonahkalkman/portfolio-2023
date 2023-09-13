@@ -44,18 +44,42 @@ export default function Marquee({ text }: Props) {
         className="marquee__inner flex flex-auto w-fit flex-row antialiased"
         aria-hidden="true"
       >
-        <div className="marquee__part shrink-0	px-[4px]">{text}</div>
-        <div className="marquee__part shrink-0	px-[4px]">{text}</div>
-        <div className="marquee__part shrink-0	px-[4px]">{text}</div>
-        <div className="marquee__part shrink-0	px-[4px]">{text}</div>
-        <div className="marquee__part shrink-0	px-[4px]">{text}</div>
-        <div className="marquee__part shrink-0	px-[4px]">{text}</div>
-        <div className="marquee__part shrink-0	px-[4px]">{text}</div>
-        <div className="marquee__part shrink-0	px-[4px]">{text}</div>
-        <div className="marquee__part shrink-0	px-[4px]">{text}</div>
-        <div className="marquee__part shrink-0	px-[4px]">{text}</div>
-        <div className="marquee__part shrink-0	px-[4px]">{text}</div>
-        <div className="marquee__part shrink-0	px-[4px]">{text}</div>
+        <div className="marquee__part shrink-0 px-[40px] font-primary text-bold">
+          {text}
+        </div>
+        <div className="marquee__part shrink-0 px-[40px] font-primary text-bold">
+          {text}
+        </div>
+        <div className="marquee__part shrink-0 px-[40px] font-primary text-bold">
+          {text}
+        </div>
+        <div className="marquee__part shrink-0 px-[40px] font-primary text-bold">
+          {text}
+        </div>
+        <div className="marquee__part shrink-0 px-[40px] font-primary text-bold">
+          {text}
+        </div>
+        <div className="marquee__part shrink-0 px-[40px] font-primary text-bold">
+          {text}
+        </div>
+        <div className="marquee__part shrink-0 px-[40px] font-primary text-bold">
+          {text}
+        </div>
+        <div className="marquee__part shrink-0 px-[40px] font-primary text-bold">
+          {text}
+        </div>
+        <div className="marquee__part shrink-0 px-[40px] font-primary text-bold">
+          {text}
+        </div>
+        <div className="marquee__part shrink-0 px-[40px] font-primary text-bold">
+          {text}
+        </div>
+        <div className="marquee__part shrink-0 px-[40px] font-primary text-bold">
+          {text}
+        </div>
+        <div className="marquee__part shrink-0 px-[40px] font-primary text-bold">
+          {text}
+        </div>
       </div>
     </section>
   );

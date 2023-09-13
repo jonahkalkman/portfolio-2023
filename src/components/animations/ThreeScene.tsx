@@ -4,8 +4,12 @@ import { Canvas, useLoader } from "@react-three/fiber";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
 import { MeshBasicMaterial } from "three";
 
-export default function ThreeScene() {
-  const obj = useLoader(OBJLoader, "./model.obj");
+interface Props {
+  model: string;
+}
+
+export default function ThreeScene({model}: Props) {
+  const obj = useLoader(OBJLoader, model);
 
   // Create a wireframe material
   const wireframeMaterial = new MeshBasicMaterial({

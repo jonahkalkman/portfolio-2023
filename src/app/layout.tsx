@@ -1,9 +1,22 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Header from "../components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+import localFont from "@next/font/local";
+
+const londonUnderground = localFont({
+  src: [
+    {
+      path: "../../public/fonts/london_regular.ttf",
+      weight: "400",
+    },
+    {
+      path: "../../public/fonts/london_heavy.ttf",
+      weight: "800",
+    },
+  ],
+  variable: "--font-london",
+});
 
 export const metadata: Metadata = {
   title: "Jonah Kalkman",
@@ -17,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={londonUnderground.variable + " " + londonUnderground.className}>
         <main>
           <div className="container mx-auto px-4">
             <Header />
