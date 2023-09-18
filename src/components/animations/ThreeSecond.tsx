@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
-import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
+import { OBJLoader, } from "three/examples/jsm/loaders/OBJLoader.js";
 import { MeshBasicMaterial } from "three";
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function ThreeScene({ model }: Props) {
-  const objRef = useRef(null);
+  const newRef = useRef(null);
   const obj = useLoader(OBJLoader, model);
 
   // Create a wireframe material
@@ -17,7 +17,7 @@ export default function ThreeScene({ model }: Props) {
     wireframe: true,
     color: "white",
     transparent: true,
-    opacity: 0.5,
+    opacity: 1,
   });
 
   // Apply the wireframe material to the loaded OBJ object
@@ -27,33 +27,31 @@ export default function ThreeScene({ model }: Props) {
     }
   });
 
-
   // Define the rotation speed (in radians per frame)
   const rotationSpeed = 0.01;
 
   // Update the object's rotation manually in the render loop
   const animate = () => {
-    if (objRef.current) {
+    if (newRef.current) {
       // Rotate the object
       // @ts-ignore
-      objRef.current.rotation.y += rotationSpeed;
+      newRef.current.rotation.y += rotationSpeed;
     }
   };
 
   return (
-    <div className="absolute top-0 left-0 w-full h-screen z-[-1]">
+    <div className="relative w-full h-[300px]">
       <Canvas
-        className="z-0"
-        style={{ height: "100vh", width: "100%", zIndex: -1 }}
+        className="z-0 relative w-full h-full"
         shadows
         camera={{
-          position: [-6, 7, 7],
+          position: [100, 0, 10],
         }}
         onCreated={({ gl }) => {
           gl.setAnimationLoop(animate); // Start the animation loop
         }}
       >
-        <primitive object={obj} scale={[12, 12, 12]} ref={objRef} />
+        <primitive object={obj} scale={[1.5, 1.5, 1.5]} ref={newRef} />
       </Canvas>
     </div>
   );

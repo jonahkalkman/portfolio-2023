@@ -1,4 +1,6 @@
 import dynamic from "next/dynamic";
+import Image from "next/image";
+
 import Hero from "../components/Hero";
 import Case from "../components/Case";
 import Button from "../components/Button";
@@ -10,6 +12,13 @@ import TypescriptIcon from "../components/animations/TypescriptIcon";
 
 const ThreeScene = dynamic(
   () => import("../components/animations/ThreeScene"),
+  {
+    ssr: false,
+  }
+);
+
+const ThreeSecond = dynamic(
+  () => import("../components/animations/ThreeSecond"),
   {
     ssr: false,
   }
@@ -57,6 +66,13 @@ export default function Home() {
         <Marquee text="About me -" />
       </div>
       <div className="container mx-auto mb-40">
+        <Image
+          className="w-full mb-20 rounded-2xl h-[700px] object-cover"
+          src="/hero.jpeg"
+          width={2000}
+          height={2000}
+          alt=""
+        />
         <div className="flex justify-center gap-20 relative">
           <p className="text-white text-3xl font-bold w-1/3 font-primary leading-normal">
             <TextAnimation
@@ -65,7 +81,7 @@ export default function Home() {
             />
           </p>
           <div className="w-1/3 ">
-            <p className="leading-[200%] mb-20 uppercase">
+            <p className="leading-[200%] mb-10 uppercase">
               <TextAnimation
                 text="My passion is to create web experiences that are both beautiful and
             functional. I have a strong focus on user experience and technology.
