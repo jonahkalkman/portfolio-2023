@@ -9,16 +9,10 @@ import TextAnimation from "../components/animations/TextAnimation";
 import SvgAnimation from "../components/animations/SvgAnimation";
 import VueAnimation from "../components/animations/VueAnimation";
 import TypescriptIcon from "../components/animations/TypescriptIcon";
+import AboutImage from "../components/AboutImage";
 
 const ThreeScene = dynamic(
   () => import("../components/animations/ThreeScene"),
-  {
-    ssr: false,
-  }
-);
-
-const ThreeSecond = dynamic(
-  () => import("../components/animations/ThreeSecond"),
   {
     ssr: false,
   }
@@ -66,13 +60,7 @@ export default function Home() {
         <Marquee text="About me -" />
       </div>
       <div className="container mx-auto mb-40">
-        <Image
-          className="w-full mb-20 rounded-2xl h-[700px] object-cover"
-          src="/hero.jpeg"
-          width={2000}
-          height={2000}
-          alt=""
-        />
+        <AboutImage />
         <div className="flex justify-center gap-20 relative">
           <p className="text-white text-3xl font-bold w-1/3 font-primary leading-normal">
             <TextAnimation
