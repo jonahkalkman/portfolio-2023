@@ -1,22 +1,24 @@
 import TextAnimation from "./animations/TextAnimation";
+import Button from "./Button";
 import CurrentTime from "./CurrentTime";
 
 export default function Hero() {
   return (
     <section className="flex items-center justify-between h-screen mt-[-70px] relative">
-      <h2 className="font-bold text-8xl leading-tight text-center w-[75%] mx-auto text-white">
+      <h2 className="font-bold text-8xl leading-tight text-center w-[75%] 2xl:w-[60%] 2xl:text-9xl 2xl:leading-snug mx-auto text-white">
         <TextAnimation
           text="Frontend Developer based in Rotterdam"
           animateOnce={true}
         />
       </h2>
-      {/* <hr className="bg-white border-none h-1 w-[100px] absolute bottom-[0px] rotate-90 left-[50%] translate-x-[-50%] rounded-md" /> */}
-      <p className="leading-none text-xs absolute bottom-10 text-white left-0 uppercase border-solid border-[1px] border-gray-200  py-2 px-7 rounded-full">
-        ROTTERDAM <CurrentTime />
-      </p>
-      <p className="smooth-transition hover:bg-white hover:text-black leading-none text-xs absolute bottom-10 text-white right-0 uppercase border-solid border-[1px] border-gray-200  py-2 px-7 rounded-full">
-        Scroll down
-      </p>
+      <div className="absolute bottom-10 left-0">
+        <Button title="ROTTERDAM " link="">
+          <CurrentTime />
+        </Button>
+      </div>
+      <div className="absolute bottom-10 right-0">
+        <Button title="SCROLL DOWN" link=""></Button>
+      </div>
     </section>
   );
 }

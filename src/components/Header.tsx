@@ -8,16 +8,16 @@ export default function Header() {
         style={{
           transition: "all .7s cubic-bezier(.7, 0, .3, 1)",
         }}
-        className="flex items-center justify-between gap-4"
+      className="flex items-center justify-between gap-4"
       >
         <Image
-          className="w-[30px] h-[30px]"
+          className="w-[30px] h-[30px] 2xl:w-[50px] 2xl:h-[50px]"
           src="/logo.png"
           width={500}
           height={500}
           alt="Picture of Jonah Kalkman"
         />
-        <h1 className="text-sm uppercase leading-none">Jonah Kalkman</h1>
+        <h1 className="text-sm uppercase leading-none 2xl:text-xl">Jonah Kalkman</h1>
       </div>
       <Navigation />
     </header>

@@ -53,7 +53,7 @@ export default function ThreeScene({ model }: Props) {
           gl.setAnimationLoop(animate); // Start the animation loop
         }}
       >
-        <primitive object={obj} scale={[12, 12, 12]} ref={objRef} />
+        <primitive object={obj} scale={[13, 13, 13]} ref={objRef} />
       </Canvas>
     </div>
   );

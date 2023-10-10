@@ -22,18 +22,17 @@ export default function AboutImage() {
 
     ScrollTrigger.create({
       trigger: element,
-
       animation: animation,
-      start: "top center",
-      end: "bottom center",
+      start: "top-=100 center",
+      end: "bottom-=600 center",
       scrub: true,
     });
   }, []);
 
   return (
-    <div ref={ref} className="mx-auto overflow-hidden rounded-2xl blur-md w-full">
+    <div ref={ref} className="mx-auto overflow-hidden rounded-3xl blur-md w-full">
       <Image
-        className="w-full mb-20 rounded-2xl h-[700px] object-cover"
+        className="w-full mb-20 rounded-3xl h-[700px]  2xl:h-[900px] object-cover"
         src="/hero.jpeg"
         alt="Picture of the author"
         width={500}

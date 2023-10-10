@@ -10,6 +10,8 @@ import SvgAnimation from "../components/animations/SvgAnimation";
 import VueAnimation from "../components/animations/VueAnimation";
 import TypescriptIcon from "../components/animations/TypescriptIcon";
 import AboutImage from "../components/AboutImage";
+import Footer from "../components/Footer";
+import GridCases from "../components/GridCases";
 
 const ThreeScene = dynamic(
   () => import("../components/animations/ThreeScene"),
@@ -24,37 +26,7 @@ export default function Home() {
       <div className="container mx-auto">
         <Hero />
         <ThreeScene model="./model.obj" />
-        <div className="flex mt-20 w-full gap-20">
-          <div className="w-2/3">
-            <Case
-              title="EuroBrouwers"
-              description="Development & design"
-              image="/eurobrouwers.jpeg"
-              alt="EuroBrouwers"
-            />
-          </div>
-          <div className="w-1/3">
-            <Case
-              title="Bar Alaska"
-              description="Development & design"
-              image="/baralaska.jpeg"
-              alt="Bar Alaska website"
-            />
-          </div>
-        </div>
-        <div className="flex mt-20 w-full gap-10">
-          <div className="w-full">
-            <Case
-              title="Green Label Logistics"
-              description="Development & design"
-              image="/greenlabellogistics.jpg"
-              alt="Green Label Logistics website"
-            />
-          </div>
-        </div>
-        <div className="text-center mt-20 mb-20">
-          <Button title="View more" link="/work" />
-        </div>
+        <GridCases />
       </div>
       <div className="mb-20 mt-40">
         <Marquee text="About me -" />
@@ -71,14 +43,10 @@ export default function Home() {
           <div className="w-1/3 ">
             <p className="leading-[200%] mb-10 uppercase">
               <TextAnimation
-                text="My passion is to create web experiences that are both beautiful and
-            functional. I have a strong focus on user experience and technology.
-            I am a frontend developer with a background in computer science.
-            Currently working as a freelance developer."
+                text="My passion is to create web experiences that are both beautiful and functional. I have a strong focus on user experience and technology. I am a frontend developer with a background in computer science. Currently working as a freelance developer."
                 animateOnce={true}
               />
             </p>
-            <TextAnimation text="TECH STACK:" animateOnce={true} />
             <div className="mb-5"></div>
             <div className="flex gap-10 items-center">
               <SvgAnimation />
@@ -94,6 +62,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

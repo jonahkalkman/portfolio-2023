@@ -28,5 +28,5 @@ export default function CurrentTime() {
       clearInterval(interval);
     };
   }, []);
-  return <span className="inline-block w-[53px] min-w-[53px] max-w-[53px]">{time}</span>;
+  return <span className="inline-block">{time}</span>;
 }
