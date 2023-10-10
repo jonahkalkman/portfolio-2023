@@ -28,22 +28,22 @@ export default function Home() {
         <ThreeScene model="./model.obj" />
         <GridCases />
       </div>
-      <div className="mb-20 mt-40">
+      <div className="mb-20 mt-20 lg:mb-20 lg:mt-40">
         <Marquee text="About me -" />
       </div>
-      <div className="container mx-auto mb-40">
-        <AboutImage />
-        <div className="flex justify-center gap-20 relative">
-          <p className="text-white text-3xl font-bold w-1/3 font-primary leading-normal">
+      <AboutImage />
+      <div className="container mx-auto mb-20 lg:mb-40">
+        <div className="flex flex-col lg:flex-row justify-center gap-5 lg:gap-20 relative">
+          <p className="text-white text-2xl lg:text-3xl font-bold w-full lg:w-1/3 font-primary leading-normal">
             <TextAnimation
               text="Turning boring websites into internet sensations using the latest technology."
               animateOnce={true}
             />
           </p>
-          <div className="w-1/3 ">
-            <p className="leading-[200%] mb-10 uppercase">
+          <div className="w-full lg:w-1/3">
+            <p className="text-sm leading-[200%] mb-10 uppercase">
               <TextAnimation
-                text="My passion is to create web experiences that are both beautiful and functional. I have a strong focus on user experience and technology. I am a frontend developer with a background in computer science. Currently working as a freelance developer."
+                text="I am a software engineer based in Rotterdam, Netherlands. My expertise and passion are in front-end development. Since high school, I have been building websites by constantly trying new web techniques. I am currently building with React and Vue.js as my main frameworks. Besides web development, I also build mobile applications for iOS and Android using React Native. I use these frameworks and techniques during my job as a frontend developer at B.made and previously worked at Keylane and Dept. To gain new insights and broaden my knowledge as a developer I also work as a freelance developer."
                 animateOnce={true}
               />
             </p>

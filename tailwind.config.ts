@@ -29,9 +29,9 @@ const config: Config = {
 
       // default breakpoints but with 40px removed
       screens: {
-        sm: "600px",
-        md: "728px",
-        lg: "984px",
+        sm: "768px",
+        md: "900px",
+        lg: "1400px",
         xl: "1900px",
         "2xl": "2400px",
       },

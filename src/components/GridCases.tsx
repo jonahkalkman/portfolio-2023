@@ -5,9 +5,9 @@ interface Props {}
 
 export default function GridCases({}: Props) {
   return (
-    <section className="mt-20">
-      <div className="grid grid-cols-4 grid-rows-4 gap-10">
-        <div className="col-span-2 row-span-2">
+    <section id="cases" className="mt-10 lg:mt-20">
+      <div className="flex gap-5 flex-col lg:grid lg:grid-cols-4 lg:grid-rows-4 lg:gap-10">
+        <div className="lg:col-span-2 lg:row-span-2">
           <Case
             title="EuroBrouwers"
             description="Development and design"
@@ -15,15 +15,15 @@ export default function GridCases({}: Props) {
             alt="EuroBrouwers"
           />
         </div>
-        <div className="row-span-2 col-start-3">
+        <div className="lg:row-span-2 lg:col-start-3">
           <Case
             title="Bar Alaska"
             description="Development and design"
-            image="/baralaska.jpeg"
+          image="/baralaska.jpeg"
             alt="Bar Alaska"
           />
         </div>
-        <div className="row-span-2 col-start-4">
+        <div className=" lg:row-span-2 lg:col-start-4">
           <Case
             title="Green Label Logistics"
             description="Development and design"
@@ -31,7 +31,7 @@ export default function GridCases({}: Props) {
             alt="Green Label Logistics"
           />
         </div>
-        <div className="row-span-2 row-start-3">
+        <div className=" lg:row-span-2 lg:row-start-3">
           <Case
             title="Urban Kr8"
             description="Development and design"
@@ -39,7 +39,7 @@ export default function GridCases({}: Props) {
             alt="Urban Kr8"
           />
         </div>
-        <div className="row-span-2 row-start-3">
+        <div className="lg:row-span-2 lg:row-start-3">
           <Case
             title="EuroBrouwers"
             description="Development and design"
@@ -47,17 +47,16 @@ export default function GridCases({}: Props) {
             alt="EuroBrouwers"
           />
         </div>
-        <div className="col-span-2 row-span-2 row-start-3">
-          <div className="relative h-full w-full rounded-3xl p-20 flex justify-center items-start flex-col bg-gradient-to-tl from-slate-500 via-slate-900 to-red-100">
-            <h2 className="text-8xl leading-snug mb-10">LET'S WORK TOGETHER</h2>
+        <div className="lg:col-span-2 lg:row-span-2 lg:row-start-3">
+          <div className="relative h-full w-full rounded-3xl p-8 lg:p-20 flex justify-center items-start flex-col bg-gradient-to-bl from-cyan-900 via-black to-cyan-600">
+            <h2 className="uppercase text-lg lg:text-5xl lg:leading-snug xl:leading-snug mb-5 lg:mb-10 xl:text-7xl">
+              Work with me
+            </h2>
             <div className="w-fit">
               <Button title="E-mail" link="mailto:" />
             </div>
           </div>
         </div>
-      </div>
-      <div className="text-center mt-20 mb-20">
-        <Button title="View more" link="/work" />
       </div>
     </section>
   );

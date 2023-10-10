@@ -1,7 +1,7 @@
 export default function VueAnimation() {
   return (
     <svg
-      className="w-[50px] h-[50px]"
+      className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
       viewBox="0 0 261.76 226.69"

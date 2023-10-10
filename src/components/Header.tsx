@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between pt-10 w-full relative z-10">
+    <header className="flex items-center lg:justify-between pt-10 pb-10 lg:pb-0 w-full relative z-10">
       <div
         style={{
           transition: "all .7s cubic-bezier(.7, 0, .3, 1)",
