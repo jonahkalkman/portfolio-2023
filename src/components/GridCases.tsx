@@ -55,7 +55,7 @@ export default function GridCases({}: Props) {
         <div className="lg:col-span-2 lg:row-span-2 lg:row-start-3">
           <div className="relative h-full w-full rounded-3xl p-8 lg:p-20 flex justify-center items-start flex-col bg-gradient-to-bl from-cyan-900 via-black to-cyan-600">
             <h2 className="uppercase text-lg lg:text-5xl lg:leading-snug xl:leading-snug mb-5 lg:mb-10 xl:text-7xl">
-              Work with me
+              Work together on your project
             </h2>
             <div className="w-fit">
               <Button title="E-mail" link="mailto:jonah@jkagency.nl" />

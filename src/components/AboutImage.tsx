@@ -41,8 +41,8 @@ export default function AboutImage() {
         className="mx-auto w-[90%] mb-10 lg:w-[140%] lg:mb-20 rounded-3xl h-[250px] md:h-[350px] lg:h-[700px] 2xl:h-[900px] object-cover"
         src="/hero.jpeg"
         alt="About image"
-        width={500}
-        height={500}
+        width={1400}
+        height={1400}
       />
     </div>
   );
