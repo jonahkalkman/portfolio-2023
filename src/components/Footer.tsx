@@ -2,7 +2,7 @@ import Button from "./Button";
 
 export default function Footer() {
   return (
-    <footer className="container mx-auto mb-5">
+    <footer className="container mx-auto mb-5" id="contact">
       <section className="rounded-3xl p-8 lg:p-20 bg-gradient-to-bl from-cyan-900 via-black to-cyan-600">
         <div className="w-full lg:w-1/2 justify-start items-start">
           <h2 className="uppercase text-bold text-lg lg:text-8xl mb-5 lg:mb-10 lg:leading-snug">
@@ -13,7 +13,7 @@ export default function Footer() {
               <Button title="E-mail" link="mailto:jonah@jkagency.nl" />
             </div>
             <div className="w-fit">
-              <Button title="GITHUB" link="https://github.com/jonahkalkman" />
+              <Button title="GITHUB" link="https://github.com/jonahkalkman" target="_blank"/>
             </div>
           </div>
         </div>

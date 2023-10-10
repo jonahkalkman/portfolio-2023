@@ -10,13 +10,14 @@ interface Props {
   description: string;
   image: string;
   alt: string;
+  link: string;
 }
 
-export default function Case({title, description, image, alt}: Props) {
+export default function Case({title, description, image, alt, link}: Props) {
   const [hover, setHover] = useState(false);
 
   return (
-    <Link href="/case">
+    <Link href={link} target="_blank">
       <div
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}

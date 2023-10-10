@@ -32,7 +32,7 @@ export default function Home() {
         <Marquee text="About me -" />
       </div>
       <AboutImage />
-      <div className="container mx-auto mb-20 lg:mb-40">
+      <div id="about" className="container mx-auto mb-20 lg:mb-40">
         <div className="flex flex-col lg:flex-row justify-center gap-5 lg:gap-20 relative">
           <p className="text-white text-2xl lg:text-3xl font-bold w-full lg:w-1/3 font-primary leading-normal">
             <TextAnimation

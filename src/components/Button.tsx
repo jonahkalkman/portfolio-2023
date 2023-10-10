@@ -3,12 +3,13 @@ import Link from "next/link";
 interface Props {
   title: string;
   link: string;
+  target?: string;
   children?: React.ReactNode;
 }
 
-export default function Button({title, link, children}: Props) {
+export default function Button({title, link, target, children}: Props) {
   return (
-    <Link href={link}>
+    <Link href={link} target={target}>
       <div className="group rounded-full border-2 border-white py-2 px-5 lg:py-3 lg:px-10 hover:bg-white transition-all duration-500 ease-in-out w-fit mx-auto">
         <div className="overflow-hidden">
           <span

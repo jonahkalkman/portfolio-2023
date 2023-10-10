@@ -13,14 +13,16 @@ export default function GridCases({}: Props) {
             description="Development and design"
             image="/eurobrouwers.jpeg"
             alt="EuroBrouwers"
+            link="https://www.eurobrouwers.eu"
           />
         </div>
         <div className="lg:row-span-2 lg:col-start-3">
           <Case
             title="Bar Alaska"
             description="Development and design"
-          image="/baralaska.jpeg"
+            image="/baralaska.jpeg"
             alt="Bar Alaska"
+            link="https://baralaska.nl"
           />
         </div>
         <div className=" lg:row-span-2 lg:col-start-4">
@@ -29,6 +31,7 @@ export default function GridCases({}: Props) {
             description="Development and design"
             image="/greenlabellogistics.jpg"
             alt="Green Label Logistics"
+            link="https://greenlabellogistics.com"
           />
         </div>
         <div className=" lg:row-span-2 lg:row-start-3">
@@ -37,6 +40,7 @@ export default function GridCases({}: Props) {
             description="Development and design"
             image="/urbankr8.jpg"
             alt="Urban Kr8"
+            link="https://urbankr8.com"
           />
         </div>
         <div className="lg:row-span-2 lg:row-start-3">
@@ -45,6 +49,7 @@ export default function GridCases({}: Props) {
             description="Development and design"
             image="/eurobrouwers.jpeg"
             alt="EuroBrouwers"
+            link="https://www.eurobrouwers.eu"
           />
         </div>
         <div className="lg:col-span-2 lg:row-span-2 lg:row-start-3">
@@ -53,7 +58,7 @@ export default function GridCases({}: Props) {
               Work with me
             </h2>
             <div className="w-fit">
-              <Button title="E-mail" link="mailto:" />
+              <Button title="E-mail" link="mailto:jonah@jkagency.nl" />
             </div>
           </div>
         </div>
