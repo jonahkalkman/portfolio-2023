@@ -1,5 +1,5 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import type {Metadata} from "next";
 import Header from "../components/Header";
 
 import localFont from "@next/font/local";
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
   description: "Portfolio website",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
-      <body className={londonUnderground.variable + " " + londonUnderground.className}>
+      <body
+        className={
+          londonUnderground.variable + " " + londonUnderground.className
+        }
+      >
         <main>
           <div className="container mx-auto px-4">
             <Header />

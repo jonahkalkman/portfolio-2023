@@ -25,7 +25,7 @@ export default function Home() {
     <div>
       <div className="container mx-auto">
         <Hero />
-        <ThreeScene model="./model.obj" />
+        {/* <ThreeScene model="./model.obj" /> */}
         <GridCases />
       </div>
       <div className="mb-20 mt-20 lg:mb-20 lg:mt-40">
